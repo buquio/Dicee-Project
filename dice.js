@@ -3,11 +3,11 @@
 var randomNumber1=Math.random()*6;
 randomNumber1=Math.floor(Math.random()*6) + 1;
 
-var randomDiceImage1="dice" + randomNumber1 + ".png";
-var randomImageSource1="images/dice" + randomNumber1 + ".png"; 
+var randomDiceImage1="dice" + randomNumber1 + ".png"; // initialimage
+var randomImageSource1="images/dice" + randomNumber1 + ".png"; // changing image
 
 var image1 = document.querySelectorAll("img")[0];
-image1.setAttribute("src", randomImageSource1);
+image1.setAttribute("src", randomImageSource1); // change src with source each time
 
 
 
@@ -22,7 +22,7 @@ var image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src", randomImageSource2);
 
 
-//xxx coninue
+//xxx continue
 if(randomNumber1>randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 Wins";
 }
